@@ -3,7 +3,5 @@
 	<name></name>
 	<author>KapTaiN_KaVerN</author>
 	<targetVersion>0.15.0</targetVersion>
-	<description>~~~~, nothing less, nothing more. 
-		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-</description>
+	<description>Remove all guns in pawn generation process, nothing less, nothing more.</description>
 </ModMetaData>
