@@ -35,7 +35,7 @@
       <max>900</max>
     </weaponMoney>
     <weaponTags>
-      <li>Gun</li>
+      <li>Neolithic</li>
     </weaponTags>
     <techHediffsMoney>
       <min>1000</min>
@@ -92,7 +92,7 @@
       <max>1800</max>
     </weaponMoney>
     <weaponTags>
-      <li>SniperRifle</li>
+      <li>NeolithicRanged</li>
     </weaponTags>
     <techHediffsMoney>
       <min>1000</min>
@@ -156,7 +156,7 @@
       <max>2</max>
     </combatEnhancingDrugsCount>
     <techHediffsTags>
-      <li>Advanced</li>
+      <li>Neolithic</li>
     </techHediffsTags>
     <techHediffsChance>0.003</techHediffsChance>
     <inventoryOptions>
@@ -180,21 +180,21 @@
     </inventoryOptions>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="GrenadierBase">
+<!--   <PawnKindDef ParentName="GrenadierBase">
     <defName>GrenadierDestructive</defName>
     <label>grenadier</label>
     <weaponTags>
       <li>GrenadeDestructive</li>
     </weaponTags>
-  </PawnKindDef>
+  </PawnKindDef> -->
 
-  <PawnKindDef ParentName="GrenadierBase">
+<!--   <PawnKindDef ParentName="GrenadierBase">
     <defName>GrenadierEMP</defName>
     <label>EMP grenadier</label>
     <weaponTags>
       <li>GrenadeEMP</li>
     </weaponTags>
-  </PawnKindDef>
+  </PawnKindDef> -->
   
   <PawnKindDef ParentName="MercenaryBase">
     <defName>MercenarySlasher</defName>
@@ -278,7 +278,7 @@
       <max>2000</max>
     </weaponMoney>
     <weaponTags>
-      <li>GunHeavy</li>
+      <li>NeolithicRanged</li>
     </weaponTags>
     <techHediffsMoney>
       <min>2000</min>
@@ -316,7 +316,7 @@
       <max>2000</max>
     </weaponMoney>
     <weaponTags>
-      <li>AdvancedGun</li>
+      <li>NeolithicRanged</li>
     </weaponTags>
     <techHediffsMoney>
       <min>2000</min>
