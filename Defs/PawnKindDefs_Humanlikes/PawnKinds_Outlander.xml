@@ -33,7 +33,7 @@
       <max>250</max>
     </weaponMoney>
     <weaponTags>
-      <li>Gun</li>
+      <li>NeolithicRanged</li>
       <li>Melee</li>
     </weaponTags>
     <techHediffsMoney>
@@ -102,7 +102,7 @@
       <max>600</max>
     </weaponMoney>
     <weaponTags>
-      <li>Gun</li>
+      <li>Neolithic</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>

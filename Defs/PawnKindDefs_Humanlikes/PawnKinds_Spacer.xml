@@ -54,7 +54,7 @@
       <max>900</max>
     </weaponMoney>
     <weaponTags>
-      <li>Gun</li>
+      <li>NeolithicRanged</li>
     </weaponTags>
     <techHediffsMoney>
       <min>1000</min>
