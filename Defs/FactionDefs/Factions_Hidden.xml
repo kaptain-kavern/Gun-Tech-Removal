@@ -35,6 +35,7 @@
     <homeIconPath>World/FactionHomes/DefaultHome</homeIconPath>
     <homeIconColor>(150,150,150)</homeIconColor>
     <allowedArrivalTemperatureRange>
+      <min>400</min>
       <max>500</max>
     </allowedArrivalTemperatureRange>
   </FactionDef>
