@@ -3,5 +3,5 @@
 	<name></name>
 	<author>KapTaiN_KaVerN</author>
 	<targetVersion>0.15.0</targetVersion>
-	<description>Remove all guns in pawn generation process, nothing less, nothing more.</description>
+	<description>Remove all guns (and grenade) in pawn generation process AND remove all mechanoids raids - You still have to use scenario options if you want to completely remove mechanoids (poisonship and psychicship</description>
 </ModMetaData>
