@@ -8,13 +8,13 @@
     <pawnsPlural>mechanoids</pawnsPlural>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <fixedName>a mechanoid hive</fixedName>
-    <raidCommonality>37</raidCommonality>
+    <raidCommonality>0</raidCommonality>
     <humanlikeFaction>false</humanlikeFaction>
     <hidden>true</hidden>
     <canFlee>false</canFlee>
     <canUseAvoidGrid>false</canUseAvoidGrid>
     <techLevel>Ultra</techLevel>
-    <earliestRaidDays>45</earliestRaidDays>
+    <earliestRaidDays>9999</earliestRaidDays>
     <startingGoodwill>
       <min>-100</min>
       <max>-100</max>
@@ -35,8 +35,7 @@
     <homeIconPath>World/FactionHomes/DefaultHome</homeIconPath>
     <homeIconColor>(150,150,150)</homeIconColor>
     <allowedArrivalTemperatureRange>
-      <min>-100</min>
-      <max>200</max>
+      <max>500</max>
     </allowedArrivalTemperatureRange>
   </FactionDef>
 
