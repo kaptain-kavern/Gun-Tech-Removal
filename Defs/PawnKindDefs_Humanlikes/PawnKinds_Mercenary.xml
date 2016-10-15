@@ -156,7 +156,7 @@
       <max>2</max>
     </combatEnhancingDrugsCount>
     <techHediffsTags>
-      <li>Neolithic</li>
+      <li>Advanced</li>
     </techHediffsTags>
     <techHediffsChance>0.003</techHediffsChance>
     <inventoryOptions>
@@ -179,22 +179,6 @@
       </subOptionsChooseOne>
     </inventoryOptions>
   </PawnKindDef>
-
-<!--   <PawnKindDef ParentName="GrenadierBase">
-    <defName>GrenadierDestructive</defName>
-    <label>grenadier</label>
-    <weaponTags>
-      <li>GrenadeDestructive</li>
-    </weaponTags>
-  </PawnKindDef> -->
-
-<!--   <PawnKindDef ParentName="GrenadierBase">
-    <defName>GrenadierEMP</defName>
-    <label>EMP grenadier</label>
-    <weaponTags>
-      <li>GrenadeEMP</li>
-    </weaponTags>
-  </PawnKindDef> -->
   
   <PawnKindDef ParentName="MercenaryBase">
     <defName>MercenarySlasher</defName>
