@@ -5,7 +5,8 @@
     <defName>Mechanoid</defName>
     <label>mechanoid hive</label>
     <description>A hive of ancient self-replicating machines.</description>
-    <pawnsPlural>mechanoids</pawnsPlural>    
+    <pawnsPlural>mechanoids</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <fixedName>a mechanoid hive</fixedName>
     <raidCommonality>37</raidCommonality>
     <humanlikeFaction>false</humanlikeFaction>
@@ -13,7 +14,7 @@
     <canFlee>false</canFlee>
     <canUseAvoidGrid>false</canUseAvoidGrid>
     <techLevel>Ultra</techLevel>
-    <earliestRaidDays>99999</earliestRaidDays>
+    <earliestRaidDays>45</earliestRaidDays>
     <startingGoodwill>
       <min>-100</min>
       <max>-100</max>
@@ -22,9 +23,21 @@
     <naturalColonyGoodwill>
       <min>-100</min>
       <max>-100</max>
-    </naturalColonyGoodwill>    
+    </naturalColonyGoodwill>
+    <pawnGroupMakers>
+      <li Class="PawnGroupMaker_Normal">
+        <options>
+            <Centipede>100</Centipede>
+            <Scyther>100</Scyther>
+        </options>
+      </li>
+    </pawnGroupMakers>
     <homeIconPath>World/FactionHomes/DefaultHome</homeIconPath>
-    <homeIconColor>(150,150,150)</homeIconColor>    
+    <homeIconColor>(150,150,150)</homeIconColor>
+    <allowedArrivalTemperatureRange>
+      <min>-100</min>
+      <max>200</max>
+    </allowedArrivalTemperatureRange>
   </FactionDef>
 
 </Defs>
