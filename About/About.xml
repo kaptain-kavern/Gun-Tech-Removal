@@ -1,7 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name></name>
+	<name>Guns and Grenades Tech Removal</name>
 	<author>KapTaiN_KaVerN</author>
 	<targetVersion>0.15.0</targetVersion>
-	<description>Remove all guns (and grenade) in pawn generation process AND remove all mechanoids raids - You still have to use scenario options if you want to completely remove mechanoids (poisonship and psychicship</description>
+	<description>&lt;size=20&gt;For all your medieval or tribal plays&lt;/size&gt;
+
+	Remove all guns (and grenades) in pawn generation process AND remove all mechanoids raids - You still have to use scenario options if you want to completely remove mechanoids events(poisonship and psychicship)
+
+
+&lt;size=20&gt;Credit&lt;/size&gt;	
+
+	Thank you to Reddit User kcirdor for the testing and his insights</description>
 </ModMetaData>
