@@ -1,7 +1,7 @@
 # Gun-Tech-Removal
 
 ## Description
-Remove all guns (and grenades) in pawn generation process AND remove all mechanoids raids - *You still have to use scenario options if you want to completely remove mechanoids events(poisonship and psychicship)*
+Remove all guns (and grenades) in pawn generation process AND remove all mechanoids raids - *You still have to use scenario options if you want to completely remove mechanoids events (poisonship and psychicship)*
 
 ## Preview
 <p align="center"><img src="https://i.imgur.com/Ajmxh8w.png?1" alt="Preview"/></p>
