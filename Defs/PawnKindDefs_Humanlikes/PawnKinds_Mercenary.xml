@@ -147,6 +147,9 @@
       <min>600</min>
       <max>1000</max>
     </weaponMoney>
+    <weaponTags>
+      <li>Neolithic</li>
+    </weaponTags>
     <techHediffsMoney>
       <min>1000</min>
       <max>1500</max>
