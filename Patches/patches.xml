@@ -1,134 +1,179 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<Operation Class="PatchOperationRemove"> <!-- no Mechanoids! -->
-		<xpath>/Defs/FactionDef[defName = "Mechanoid"]</xpath>
-	</Operation>
-
-	<Operation Class="PatchOperationRemove"> <!-- no Mechanoids! -->
-		<xpath>/PawnKindDefs/PawnKindDef[defName = "Scyther"]</xpath>
-	</Operation>
-
-	<Operation Class="PatchOperationRemove"> <!-- no Mechanoids! -->
-		<xpath>/PawnKindDefs/PawnKindDef[defName = "Centipede"]</xpath>
-	</Operation>
-
-	<Operation Class="PatchOperationRemove"> <!-- no Spacer! -->
-		<xpath>/Defs/FactionDef[defName = "Spacer"]</xpath>
-	</Operation>
-
-	<Operation Class="PatchOperationRemove"> <!-- no Spacer! -->
-		<xpath>/Defs/FactionDef[defName = "SpacerHostile"]</xpath>
-	</Operation>
-
-	<Operation Class="PatchOperationRemove"> <!-- no Spacer! -->
-		<xpath>/PawnKindDefs/PawnKindDef[defName = "SpaceRefugee"]</xpath>
-	</Operation>
-
-	<Operation Class="PatchOperationRemove"> <!-- no Spacer! -->
-		<xpath>/PawnKindDefs/PawnKindDef[defName = "SpaceSoldier"]</xpath>
-	</Operation>
-
-	<Operation Class="PatchOperationRemove"> <!-- no Grenades! -->
-		<xpath>/ThingDefs/ThingDef[defName = "Weapon_GrenadeFrag"]</xpath>
-	</Operation>
-
-	<Operation Class="PatchOperationRemove"> <!-- no Grenades! -->
-		<xpath>/ThingDefs/ThingDef[defName = "Weapon_GrenadeEMP"]</xpath>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace"> <!-- Change all WeaponTags with "Gun" and "Melee" to "Melee" and "NeolithicRanged" -->
-		<xpath>/PawnKindDefs/PawnKindDef[defName ="MercenaryHeavy"]/weaponTags</xpath>
+	<Operation Class="PatchOperationReplace"> <!-- Mechanoid aren't required at game start -->
+		<xpath>/Defs/FactionDef[defName ="Mechanoid"]/requiredCountAtGameStart</xpath>
 		<value>
-			<weaponTags>
-				<li>Melee</li>
-				<li>Neolithic</li>
-			</weaponTags>
+			<requiredCountAtGameStart>0</requiredCountAtGameStart>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace"> <!-- Change all WeaponTags with "Gun" and "Melee" to "Melee" and "NeolithicRanged" -->
-		<xpath>/PawnKindDefs/PawnKindDef[defName ="Villager"]/weaponTags</xpath>
+	<Operation Class="PatchOperationAdd"> <!-- Mechanoid maximum allowed faction sets to 0 -->
+		<xpath>/Defs/FactionDef[defName ="Mechanoid"]</xpath>
 		<value>
-			<weaponTags>
-				<li>Melee</li>
-				<li>Neolithic</li>
-			</weaponTags>
+			<maxCountAtGameStart>0</maxCountAtGameStart>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace"> <!-- Change all WeaponTags with "Gun" and "Melee" to "Melee" and "NeolithicRanged" -->
-		<xpath>/PawnKindDefs/PawnKindDef[defName ="Drifter"]/weaponTags</xpath>
+	<Operation Class="PatchOperationReplace"> <!-- Mechanoid aren't allowed to come if temperature is inferior to 800 -->
+		<xpath>/Defs/FactionDef[defName ="Mechanoid"]/allowedArrivalTemperatureRange</xpath>
 		<value>
-			<weaponTags>
-				<li>Melee</li>
-				<li>Neolithic</li>
-			</weaponTags>
+			<allowedArrivalTemperatureRange>
+				<min>800</min>
+				<max>999</max>
+			</allowedArrivalTemperatureRange>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace"> <!-- Change all WeaponTags with "Gun" and "Melee" to "Melee" and "NeolithicRanged" -->
-		<xpath>/PawnKindDefs/PawnKindDef[@Name = "EliteBase"]/weaponTags</xpath>
+	<Operation Class="PatchOperationAdd"> <!-- Same as above for Spacer -->
+		<xpath>/Defs/FactionDef[defName ="Spacer"]</xpath>
 		<value>
-			<weaponTags>
-				<li>Melee</li>
-				<li>Neolithic</li>
-			</weaponTags>
+			<requiredCountAtGameStart>0</requiredCountAtGameStart>
+			<maxCountAtGameStart>0</maxCountAtGameStart>
+			<allowedArrivalTemperatureRange>
+				<min>800</min>
+				<max>999</max>
+			</allowedArrivalTemperatureRange>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace"> <!-- Change all WeaponTags with "Gun" to "NeolithicRanged" -->
-		<xpath>/PawnKindDefs/PawnKindDef[defName ="MercenaryGunner"]/weaponTags</xpath>
+	<Operation Class="PatchOperationAdd"> <!-- Same as above for SpacerHostile -->
+		<xpath>/Defs/FactionDef[defName ="SpacerHostile"]</xpath>
 		<value>
-			<weaponTags>
-				<li>Neolithic</li>
-			</weaponTags>
+			<requiredCountAtGameStart>0</requiredCountAtGameStart>
+			<maxCountAtGameStart>0</maxCountAtGameStart>
+			<allowedArrivalTemperatureRange>
+				<min>800</min>
+				<max>999</max>
+			</allowedArrivalTemperatureRange>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace"> <!-- Change all WeaponTags with "Gun" to "NeolithicRanged" -->
-		<xpath>/PawnKindDefs/PawnKindDef[defName ="MercenarySniper"]/weaponTags</xpath>
+	<Operation Class="PatchOperationReplace"> <!-- Outlander can't siege (no mortars) -->
+		<xpath>/Defs/FactionDef[defName ="Outlander"]/canSiege</xpath>
 		<value>
-			<weaponTags>
-				<li>Neolithic</li>
-			</weaponTags>
+			<canSiege>false</canSiege>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace"> <!-- Change all WeaponTags with "Gun" to "NeolithicRanged" -->
-		<xpath>/PawnKindDefs/PawnKindDef[defName ="TownGuard"]/weaponTags</xpath>
+	<Operation Class="PatchOperationReplace"> <!-- Pirate can't siege (no mortars) -->
+		<xpath>/Defs/FactionDef[defName ="Pirate"]/canSiege</xpath>
 		<value>
-			<weaponTags>
-				<li>Neolithic</li>
-			</weaponTags>
+			<canSiege>false</canSiege>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace"> <!-- Change all WeaponTags with "Gun" to "NeolithicRanged" -->
-		<xpath>/PawnKindDefs/PawnKindDef[defName ="Scavenger"]/weaponTags</xpath>
+	<Operation Class="PatchOperationReplace"> <!-- Sets Pirate techLevel to Industrial instead of Spacer -->
+		<xpath>/Defs/FactionDef[defName ="Pirate"]/techLevel</xpath>
 		<value>
-			<weaponTags>
-				<li>Neolithic</li>
-			</weaponTags>
+			<techLevel>Industrial</techLevel>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace"> <!-- Change all WeaponTags with "Gun" to "NeolithicRanged" -->
-		<xpath>/PawnKindDefs/PawnKindDef[defName ="Pirate"]/weaponTags</xpath>
+	<Operation Class="PatchOperationReplace"> <!-- Change all WeaponTags with "Gun" and "Melee" to "NonNeolithicOnlyMelee" and "NeolithicRanged" -->
+		<xpath>/Defs/PawnKindDef[defName ="MercenaryHeavy"]/weaponTags</xpath>
 		<value>
 			<weaponTags>
-				<li>Neolithic</li>
+				<li>NonNeolithicOnlyMelee</li>
+				<li>NeolithicRangedHeavy</li>
 			</weaponTags>
 		</value>
 	</Operation>
+ 
+	<Operation Class="PatchOperationReplace"> <!-- Change all WeaponTags with "Gun" and "Melee" to "NonNeolithicOnlyMelee" and "NeolithicRanged" -->
+		<xpath>/Defs/PawnKindDef[defName ="Villager"]/weaponTags</xpath>
+		<value>
+			<weaponTags>
+				<li>NonNeolithicOnlySimpleMelee</li>
+				<li>NeolithicRangedBasic</li>
+			</weaponTags>
+		</value>
+	</Operation> 
+ 
+  <Operation Class="PatchOperationReplace"> <!-- Change all WeaponTags with "Gun" and "Melee" to "NonNeolithicOnlyMelee" and "NeolithicRanged" --> 
+    <xpath>/Defs/PawnKindDef[defName ="Drifter"]/weaponTags</xpath> 
+    <value> 
+      <weaponTags> 
+        <li>NonNeolithicOnlyMelee</li> 
+        <li>NeolithicRangedBasic</li> 
+      </weaponTags> 
+    </value> 
+  </Operation> 
+ 
+  <Operation Class="PatchOperationReplace"> <!-- Change all WeaponTags with "Gun" and "Melee" to "NonNeolithicOnlyMelee" and "NeolithicRanged" --> 
+    <xpath>/Defs/PawnKindDef[@Name = "EliteBase"]/weaponTags</xpath> 
+    <value> 
+      <weaponTags> 
+        <li>NonNeolithicOnlyMelee</li> 
+        <li>NeolithicRanged</li> 
+      </weaponTags> 
+    </value> 
+  </Operation> 
+ 
+  <Operation Class="PatchOperationReplace"> <!-- Change all WeaponTags with "Gun" to "NeolithicRanged" --> 
+    <xpath>/Defs/PawnKindDef[defName ="MercenaryGunner"]/weaponTags</xpath> 
+    <value> 
+      <weaponTags> 
+        <li>NeolithicRanged</li> 
+      </weaponTags> 
+    </value> 
+  </Operation> 
+ 
+  <Operation Class="PatchOperationReplace"> <!-- Change all WeaponTags with "Gun" to "NeolithicRanged" --> 
+    <xpath>/Defs/PawnKindDef[defName ="MercenarySniper"]/weaponTags</xpath> 
+    <value> 
+      <weaponTags> 
+        <li>NeolithicRangedHunter</li> 
+      </weaponTags> 
+    </value> 
+  </Operation> 
+ 
+  <Operation Class="PatchOperationReplace"> <!-- Change all WeaponTags with "Gun" to "NeolithicRanged" --> 
+    <xpath>/Defs/PawnKindDef[defName ="TownGuard"]/weaponTags</xpath> 
+    <value> 
+      <weaponTags> 
+        <li>NonNeolithicOnlyMelee</li>
+        <li>NeolithicRanged</li>
+      </weaponTags> 
+    </value> 
+  </Operation> 
+ 
+  <Operation Class="PatchOperationReplace"> <!-- Change all WeaponTags with "Gun" to "NeolithicRanged" --> 
+    <xpath>/Defs/PawnKindDef[defName ="Scavenger"]/weaponTags</xpath> 
+    <value> 
+      <weaponTags> 
+        <li>NeolithicRanged</li>
+        <li>NonNeolithicOnlySimpleMelee</li>
+      </weaponTags> 
+    </value> 
+  </Operation> 
+ 
+  <Operation Class="PatchOperationReplace"> <!-- Change all WeaponTags with "Gun" to "NeolithicRanged" --> 
+    <xpath>/Defs/PawnKindDef[defName ="Pirate"]/weaponTags</xpath> 
+    <value> 
+      <weaponTags> 
+        <li>NonNeolithicOnlyMelee</li>
+        <li>NeolithicRangedBasic</li>
+    </weaponTags> 
+    </value> 
+  </Operation>
 
-	<Operation Class="PatchOperationReplace"> <!-- Change all WeaponTags with "GrenadeEMP" to "GrenadeDestructive" -->
-		<xpath>/PawnKindDefs/PawnKindDef[defName ="GrenadierEMP"]/weaponTags</xpath>
-		<value>
-			<weaponTags>
-				<li>GrenadeDestructive</li>
-			</weaponTags>
-		</value>
-	</Operation>
+  <Operation Class="PatchOperationReplace"> <!-- Change GrenadeFrag weaponTags for raiders not be generated with them but still with Molotov --> 
+    <xpath>/Defs/ThingDef[defName ="Weapon_GrenadeFrag"]/weaponTags</xpath> 
+    <value> 
+      <weaponTags> 
+        <li>GrenaDestructive</li> 
+      </weaponTags> 
+    </value> 
+  </Operation>
+ 
+  <Operation Class="PatchOperationReplace"> <!-- Change all WeaponTags with "GrenadeEMP" to "GrenadeDestructive" --> 
+    <xpath>/Defs/PawnKindDef[defName ="GrenadierEMP"]/weaponTags</xpath> 
+    <value> 
+      <weaponTags> 
+        <li>GrenadeDestructive</li> 
+      </weaponTags> 
+    </value> 
+  </Operation> 
 
 </Patch>
