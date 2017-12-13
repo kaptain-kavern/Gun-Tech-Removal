@@ -1,3 +1,4 @@
+[![Version](https://img.shields.io/badge/Rimworld-B18-red.svg?style=for-the-badge)](https://ludeon.com/forums/index.php?topic=22120)
 # Gun-Tech-Removal
 
 ## Description
