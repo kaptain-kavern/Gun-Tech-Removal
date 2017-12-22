@@ -13,3 +13,8 @@ Remove all guns (and grenades) in pawn generation process AND remove all mechano
 ## Thanks
 - Came from [this suggestion on Reddit](https://www.reddit.com/r/RimWorld/comments/57hmq0/mod_to_disable_grenades/).
 - Thanks to Reddit User [kcirdor](https://www.reddit.com/user/kcirdor) for the testing and his insights
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/kaptain-kavern/Gun-Tech-Removal/badge.svg?style=beer-square)](https://beerpay.io/kaptain-kavern/Gun-Tech-Removal)  [![Beerpay](https://beerpay.io/kaptain-kavern/Gun-Tech-Removal/make-wish.svg?style=flat-square)](https://beerpay.io/kaptain-kavern/Gun-Tech-Removal?focus=wish)
